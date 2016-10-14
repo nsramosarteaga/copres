@@ -1,6 +1,5 @@
 <?php
 //global $config;
-//include $config['url_aplicacion'].'model/System/Conexion.php';
 include $config['path_aplicacion'].'model/System/Conexion.php';
 include $config['path_aplicacion'].'model/System/Autenticacion.php';
 //Inicio de Sessión
@@ -19,11 +18,9 @@ else
   $fecha_guardada = $_SESSION['ultimo_acceso'];
   $ahora = time();
   $tiempo_transcurrido = $ahora-$fecha_guardada;
-
   //comparamos el tiempo transcurrido
   if($tiempo_transcurrido >= 1200) {
-    //utilizar 3600 para 1 hora
-    
+    //utilizar 3600 para 1 hora    
     $conexion = new Conexion();
     $id_conexion = $conexion->conectar();
     //var_dump($username);
