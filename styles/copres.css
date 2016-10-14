@@ -9,7 +9,7 @@
     border-radius: 3px;
 }
 .bs-callout-danger{
-    border-left-color: #d9534f;
+    border-left-color: #cc4f4c;
     color:#d9534f;
 }
 
@@ -26,4 +26,7 @@
 }
 .small65{
 	font-size: 65%;
+}
+.small50{
+	font-size: 50%;
 }
