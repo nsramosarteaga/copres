@@ -5,21 +5,10 @@ $filename =$_POST['filename'];
 $pagesize = (isset($_POST['pagesize'])?$_POST['pagesize']:'LETTER');
 $pageorientation = (isset($_POST['pageorientation'])?$_POST['pageorientation']:'L');
 $margenes = array(10, 10, 20, 10);
-include_once('../local/es_CO.php'); // Idioma
+include_once('../local/es_CO.php'); // Cargar Idioma
 if($pageorientation=='P'){
 	$width = "width:670px;";
-	/*
-	$header='<div style="padding:0mm 0mm -5mm 0mm; width:680px; margin-bottom:10mm">
-			<img src="../img/escudo_mariquita_small.png" width="60" height="72" style="margin:0mm 0mm 0mm 0mm; display:inline-block width:60px" />
-			<div style="margin:-20mm 0mm 5mm 25mm; display:inline-block; width:405px; text-align:center;">
-				<p style="font-size:12pt; color:black;">
-				'.$lang['copyright']['empresa'].'<br/>
-				'.$lang['copyright']['secretaria'].'<br/>
-				</p>
-			</div>
-			<img src="../img/bandera_mariquita_small.jpg" width="90" height="60" style="display:inline-block; width:90px; margin:0px 0px 0px 650px;" />
-		</div>';
-	*/
+	
 	$header = '<div style="text-align:center; margin-bottom:680px; width:680px;">
 		<table style="padding:0px; border-collapse:collapse; width:680px; text-align:center; border: solid 0px #ffffff; font-size:85%;" >
 		<tr>
@@ -104,5 +93,4 @@ $content = $html2pdf->Output('',true);
 $file = fopen($filename, "w");
 fwrite($file, $content);
 fclose($file);
-	
 ?>
