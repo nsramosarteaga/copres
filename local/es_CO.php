@@ -190,5 +190,5 @@ $lang['formato_cert']['version'] = 'Versión: 01';
 $lang['certificacion']['texto_uno'] ="EL SUSCRITO SECRETARIO DE DESARROLLO SOCIAL<BR/>AREA DE ASEGURAMIENTO<BR/><BR/><BR/>CERTIFICA QUE:<BR/><BR/><BR/>";
 $lang['certificacion']['nombre_funcionario_certificador']="NOMBRE DEL CERTIFICADOR/A";
 $lang['certificacion']['cargo_funcionario_certificador']="CARGO DEL CERTIFICADOR/A";
-$lang['certificacion']['funcionario_elabora']="Angie Martínez";
+$lang['certificacion']['funcionario_elabora']="nramos";
 ?>
