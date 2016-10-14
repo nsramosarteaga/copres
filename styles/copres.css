@@ -1,0 +1,29 @@
+#div_loading, #div_success, #div_error{
+    display: none;
+}
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout-danger{
+    border-left-color: #d9534f;
+    color:#d9534f;
+}
+
+#pre-load-web {width:100%;position:absolute;background:#92def8;left:0px;top:280px;z-index:100000}
+/*aqui centramos la imagen si coloco margin left -30 es por que la imagen mide 60 */
+#pre-load-web #imagen-load{left:50%;margin-left:-32px;position:absolute}
+
+#div_listado{background:#ffffff; padding:0px; border-radius:6px; border:0px solid #ffffff;}
+.small75{
+	font-size: 75%;
+}
+.small70{
+	font-size: 70%;
+}
+.small65{
+	font-size: 65%;
+}
